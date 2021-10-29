@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>]
+         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+
+	<title>Task 2 + 3: RentalZ App & SQLite database</title>
+</head>
+<body>
+	<section id="page" data-role="page">
+		<header data-role="header">
+			<h1>Task 2 + 3: RentalZ App & SQLite database</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+			<div data-role="fieldcontain">
+				<label for="select" class="select">Property Type:</label>
+				<select id="PptyType" name="PptyType" data-native-menu="false" required="required">
+					<option value="" >Choose property type</option>
+					<option value="Flat">Flat</option>
+					<option value="House">House</option>
+					<option value="Bungalow">Bungalow</option>
+					<option value="Apartment">Apartment</option>
+					<option value="Shophouse">Shophouse</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Bedroom" class="select">Bedroom:</label>
+				<select id="BedRm" name="BedRm" data-native-menu="false" required="required">
+					<option value="" selected="selected">Choose bedroom type</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+					<option value="Studio">Studio</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="">Date</label>
+				<input type="date" name="rpDate" id="rpDate" value="" required="required" />
+			</div>
+			<div data-role="fieldcontain">
+				<label for="">Monthly Price</label>
+				<input type="number" name="Price" id="Price" value="" required="required" />
+			</div>
+			<div data-role="fieldcontain">
+				<label for="furniture" class="select">Furniture type:</label>
+				<select id="furniType" name="furniType" data-native-menu="false">
+					<option value="unknown" selected="selected">Unknown</option>
+					<option value="furnished">Furnished</option>
+					<option value="unFurnished">Unfurnished</option>
+					<option value="partFurnished">Partfurnished</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="">Note</label>
+				<textarea cols="40" rows="8" name="note" id="note"></textarea>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="reporter">Reporter</label>
+				<input type="text" name="rpter" id="rpter" value="" required="required" />
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a"> 
+					<a href="#" class="ui-button-a" onclick="save();" data-role="button" id="save">Save</a>
+				</div>
+				<div class="ui-block-b"> 
+					<a href="view.html" class="ui-button-b" data-role="button" id="Refresh">Back</a>
+				</div>
+			</div>
+			<a href="index.html" class="ui-btn" data-ajax="false">Back</a>
+			<a href="view.html" class="ui-btn" data-ajax="false">View</a>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h1>Footer</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+</body>
+<script src="js/add.js" type="text/javascript" charset="utf-8"></script>
+</html>

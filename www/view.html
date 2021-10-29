@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+   	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+   	<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<title>RentalZ View Informations Page</title>
+</head>
+<body>
+	<section id="page" data-role="page">
+		<header data-role="header">
+			<h1>View Informations</h1>
+		</header><!-- /header -->
+		<article data-role="main" class="ui-content">
+		<div data-role="fieldcontain">
+			<label for="">Search</label>
+			<input type="search" name="" id="srchBox" value="" />
+		</div>
+		
+		<table data-role="table" class="ui-responsive table-stroke" id="mytable">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Property</th>
+					<th>Bedroom</th>
+					<th>Date</th>
+					<th>Price per month</th>
+					<th>Furniture type</th>
+					<th>Note</th>
+					<th>Reporter</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody id="tbBody"></tbody>
+		</table>
+		<a href="phonegap.html" class="ui-btn" data-ajax="false">Add</a>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h1>Footer</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+</body>
+<script src="js/view.js" type="text/javascript" charset="utf-8" async defer></script>
+</html>
